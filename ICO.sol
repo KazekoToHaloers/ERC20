@@ -43,10 +43,10 @@ contract ICO {
     //ico這邊蒐集到的資訊,轉移到erc20上
     function setINFO() public {
         owner = msg.sender;                     //預設owner為msg.sender,用來管理ICO的時程
-        string memory name = "Fubon Token";     //幣的token名
+        string memory name = "Mars";     //幣的token名
         uint8 decimals = 18;                    //同樣是18位(同等以太坊但可以自己轉大轉小token比值)
-        string memory symbol = "FBT";           //幣的sybol
-        uint256 totalSupply = 100000*(10**18);  //10萬顆fubon token,但最小也有小數點至18位的token
+        string memory symbol = "Mar";           //幣的sybol
+        uint256 totalSupply = 100000*(10**18);  //10萬顆Mars token,但最小也有小數點至18位的token
         mCaps = totalSupply;                    //還有多少token可以賣的變數
         mTokenAddress = address(new ERC20(name, decimals, symbol, totalSupply));
 
@@ -56,10 +56,10 @@ contract ICO {
     /*
     constructor() public {
         owner = msg.sender;                     //預設owner為msg.sender,用來管理ICO的時程
-        string memory name = "Fubon Token";     //幣的token名
+        string memory name = "Mars";     //幣的token名
         uint8 decimals = 18;                    //同樣是18位(同等以太坊但可以自己轉大轉小token比值)
-        string memory symbol = "FBT";           //幣的sybol
-        uint256 totalSupply = 100000*(10**18);  //10萬顆fubon token,但最小也有小數點至18位的token
+        string memory symbol = "Mar";           //幣的sybol
+        uint256 totalSupply = 100000*(10**18);  //10萬顆Mars token,但最小也有小數點至18位的token
         mCaps = totalSupply;                    //還有多少token可以賣的變數
         mTokenAddress = address(new ERC20(name, decimals, symbol, totalSupply));
 
