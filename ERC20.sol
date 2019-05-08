@@ -8,12 +8,12 @@ contract ERC20 is interface_ERC20{
 	using SafeMath for uint256;
 
 
-	string public name = "Fubon Token";
+	string public name = "Mars";
 	uint8 public decimals = 18;
-	string public symbol = "FBT";
+	string public symbol = "Mar";
 
 
-	uint256 private _totalSupply = 0;//發行10萬個Fubon token
+	uint256 private _totalSupply = 0;//發行10萬個token
 	mapping(address => uint256) _balances;
 	mapping(address => mapping(address => uint256)) _approve;
 
